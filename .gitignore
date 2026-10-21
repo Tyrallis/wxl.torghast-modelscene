@@ -1,0 +1,15 @@
+# in-source CMake/Visual Studio build output
+build/
+dist/
+x64/
+win-x64/
+win-x64-steps/
+.vs/
+*.dir/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake

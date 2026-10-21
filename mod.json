@@ -1,0 +1,14 @@
+{
+  "$schema": "../../sdk/schema/mod.json",
+  "id": "wxl.torghast-modelscene",
+  "name": "Torghast ModelScene compatibility",
+  "version": "0.1.0",
+  "abi": "0.5",
+  "description": "Adds a WotLK ModelScene-style effect API to the WarcraftXL client Lua runtime.",
+  "binaries": {
+    "win-x64": "bin/x64/torghast-modelscene.dll"
+  },
+  "requires": [
+    { "service": "wxl.script", "version": 1 }
+  ]
+}
