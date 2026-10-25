@@ -141,9 +141,9 @@ end
             return WXL_OK;
         }
 
-        void OnScriptVmReady(const wxl_script_vm_args& args) override
+        void OnScriptVmReady(wxl_script_context context, void*) override
         {
-            if (args.context != WXL_SCRIPT_CONTEXT_GAME)
+            if (context != WXL_SCRIPT_CONTEXT_GAME)
                 return;
 
             const wxl::ScriptService script;
@@ -162,4 +162,4 @@ end
     };
 } // namespace
 
-WXL_MOD(TorghastModelScene, "wxl.torghast-modelscene", "Torghast ModelScene compatibility", 1)
+WXL_MOD(TorghastModelScene, "wxl.torghast-modelscene", "Torghast ModelScene compatibility")
