@@ -35,9 +35,9 @@ pages. Loading this mod is separate from the addon: build it with the adjacent S
 
 ## Build
 
-Needs a checkout of the WarcraftXL SDK ([Tyrallis/sdk](https://github.com/Tyrallis/sdk/tree/x64-port), `x64-port`) at
+Needs a checkout of the WarcraftXL SDK ([WarcraftXL/sdk](https://github.com/WarcraftXL/sdk) or this fork's `x64-port`) at
 `../../sdk`, or pass `-DWXL_SDK_DIR=...`. Build with Visual Studio 2022: the 2026 Insiders compiler (MSVC 14.50) crashes
-on the SDK's headers. Since 0.2.0 the mod needs WarcraftXL ABI 0.1.15; older clients refuse it.
+on the SDK's headers. Since 0.2.1 the mod needs ABI 0.1.20 (WarcraftXL main); older clients refuse it.
 
 ```
 cmake -S . -B build
